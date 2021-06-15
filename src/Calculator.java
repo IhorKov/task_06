@@ -2,11 +2,13 @@ public class Calculator {
 
     public static void main(String[] args) {
 
-        int[]arr = new int[]{ 10, 15, 20, 30, 50, };
+        int[]arr = new int[] { 10, 15, 20, 30, 50, };
         int totalSumArr = sum(arr);
 
         double a = 2.123;
         double b = 10.6387;
+
+        System.out.println(totalSumArr);
         System.out.println(multiply(a, b));
     }
     public static int sum(int[] arr) {
@@ -15,7 +17,6 @@ public class Calculator {
         for (int i = 0; i < arr.length; i++) {
             total += arr[i];
         }
-
         return total;
     }
 
